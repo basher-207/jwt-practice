@@ -1,0 +1,49 @@
+GET http://localhost:4000/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiU21pdGgiLCJpYXQiOjE2OTc2NjMxMTQsImV4cCI6MTY5NzY2MzE1OX0.oPV8lVlZDiLzgpIzn2PfDFQXV1F90ajRXcrnOCeHldM
+
+###
+GET http://localhost:4000/posts/my
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiU21pdGgiLCJpYXQiOjE2OTc2NjMxMTQsImV4cCI6MTY5NzY2MzE1OX0.oPV8lVlZDiLzgpIzn2PfDFQXV1F90ajRXcrnOCeHldM
+
+###
+PATCH http://localhost:4000/posts/1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiU21pdGgiLCJpYXQiOjE2OTc2NTg1MTMsImV4cCI6MTY5NzY1ODU1OH0.oW5OxJ5GlE8bc9AlMcn9fVinrUfVHVWH1PZCBcthXeQ
+Content-Type: application/json
+
+{
+  "title": "Some title"
+}
+
+###
+DELETE http://localhost:4000/auth/logout
+Content-Type: application/json
+
+{
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiU21pdGgiLCJpYXQiOjE2OTc2NjM2MjF9.v8VQ1flkc0U4QelLyGwOorb1Ofomd9x37EMI3bfQKDM"
+}
+
+###
+POST http://localhost:4000/auth/token
+Content-Type: application/json
+
+{
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiU21pdGgiLCJpYXQiOjE2OTc3MzU1ODR9.Es6trc_eeeqKUGiJi4uo685JoW34DGkl4xHUMAxFhj0"
+}
+
+###
+POST http://localhost:4000/auth/login
+Content-Type: application/json
+
+{
+  "username": "Smith",
+  "password": "sd%3490gL@Sd"
+}
+
+###
+POST http://localhost:4000/auth/signup
+Content-Type: application/json
+
+{
+  "username": "Smith",
+  "password": "sd%3490gL@Sd"
+}
