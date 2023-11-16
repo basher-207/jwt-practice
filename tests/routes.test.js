@@ -191,7 +191,7 @@ describe("", () => {
     it(`allows user to get new valid token using refresh token
           and calls jwt sign and verify functions with correct arguments`, async () => {
       const signedUpUser = {
-        username: "Smith",
+        name: "Smith",
         password: "sd%3490gL@Sd12Aq$",
       };
       const payload = { token: "other-token" };
